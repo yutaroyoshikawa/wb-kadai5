@@ -1,0 +1,49 @@
+#main-wrapper {
+	width: 1040px;
+	margin: 180px auto 100px auto;
+	background: #FFF;
+	filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+
+label {
+	display: block;
+}
+
+input, select {
+	text-align: center;
+	width: 100%;
+	border: none;
+	background: #EEE;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+label {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	font-size: 20px;
+	color: #444;
+}
+
+#main-wrapper img{
+	width: 160px;
+	display: flex;
+	margin: 0 auto;
+	padding: 50px 0;
+	cursor: pointer;
+}
+
+.input{
+	width: 60%;
+	margin: 80px auto;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p {
+	text-align: center;
+}

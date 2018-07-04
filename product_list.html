@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kadai3</title>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+			font-family: 'LaoMN';
+			src: url("/font/LaoMN.ttf") format("truetype");
+		}
+		* {
+		    margin: 0;
+		    padding: 0;
+		    text-decoration: none;
+		    font-weight: normal;
+		    list-style: none;
+		    font-family: 'LaoMN', 'Cormorant Unicase';
+		    color: #222;
+		}
+		body{
+			background: #EEE;
+		}
+		nav{
+			width: 100%;
+		    height: 80px;
+		    position: fixed;
+		    z-index: 10;
+		    top: 0;
+		    background-color: #FFF;
+		    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+		}
+		nav img{
+			display: block;
+			margin: 0 auto;
+			padding: 8px 50px;
+			cursor: pointer;
+		}
+		section{
+			width: 1028px;
+			margin: 500px auto 0 auto;
+			height: 800px;
+			/*background: #F00;*/
+
+		}
+		.main-photo{
+			width: 700px;
+		    height: 500px;
+		    z-index: 8;
+		    background-color: #FFF;
+		    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+		    float: right;
+		    position: relative;
+		    top: -550px;
+		    cursor: pointer;
+		}
+		.inner-ammount{
+			width: 500px;
+		    height: 300px;
+		    background-color: #CCC;
+		    margin: 100px auto;
+		}
+		span{
+			z-index: 9;
+			float: right;
+			position: relative;
+			font-size: 60px;
+			top: -500px;
+			right: 0px;
+			cursor: pointer;
+		}
+		.clear-right{
+			clear: right;
+		}
+		h2{
+			position: relative;
+			z-index: 9;
+			font-size: 50px;
+			cursor: pointer;
+		}
+		
+		h3{
+			position: relative;
+			z-index: 9;
+			font-size: 100px;
+			cursor: pointer;
+		}
+		.recent-list{
+			width: 860px;
+			float: right;
+			height: 300px;
+			position: relative;
+			top: -400px;
+			overflow-x: auto;
+			display: flex;
+		}
+		section h4{
+			font-size: 50px;
+			float: right;
+			margin-right: 150px;
+			position: relative;
+			top: -440px;
+		}
+		.recent-photo{
+			width: 400px;
+		    height: 160px;
+		    background-color: #FFF;
+		    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+		    display: table-cell;
+		    margin: 0 50px;
+		    cursor: pointer;
+		}
+		.recent-inner-ammount{
+			width: 150px;
+		    height: 100px;
+		    background-color: #CCC;
+		    margin: 30px 40px;
+		}
+		.down{
+			margin-top: 80px;
+		}
+
+
+		/*=============================================*/
+		/*===========ここから左寄せセクション==============*/
+		/*=============================================*/
+		.left-section{
+			position: relative;
+			top: 180px;
+		}
+		.left-section h2{
+			top: -160px;
+			float: right;
+		}
+		.left-section h3{
+			top: -90px;
+			left: 290px;
+			float: right;
+		}
+		.left-section span{
+			top: -445px;
+			float: left;
+		}
+		.left-section .main-photo{
+		    float: left;
+		}
+
+		.left-section h4{
+			float: left;
+			margin-left: 150px;
+			position: relative;
+			top: -440px;
+		}
+
+		.left-section .recent-list{
+			float: left;
+			left: -45px;
+		}
+		/*=============================================*/
+		/*===========ここまで左寄せセクション==============*/
+		/*=============================================*/
+
+		footer{
+		    width: 100%;
+		    background: #FFF;
+		    margin-top: 300px;
+		}
+
+		footer p {
+		    text-align: center;
+		    padding: 50px 0;
+		    font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="./cart.html"><img src="./img/shopping-cart.png" width="64" height="64"></a>
+	</nav>
+	<section>
+		<h2>photograph</h2>
+		<h3>hogehoge</h3>
+		<span>$50</span>
+		<div class="clear-right"></div>
+		<div class="main-photo"><div class="inner-ammount"></div></div>
+		<h4>recent works</h4>
+		<div class="clear-right"></div>
+		<ul class="recent-list">
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+		</ul>
+	</section>
+	<section class="left-section">
+		<h2>photograph</h2>
+		<h3>hogehoge</h3>
+		<span>$50</span>
+		<div class="clear-right"></div>
+		<div class="main-photo"><div class="inner-ammount"></div></div>
+		<h4>recent works</h4>
+		<div class="clear-right"></div>
+		<ul class="recent-list">
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+		</ul>
+	</section>
+	<section>
+		<h2>photograph</h2>
+		<h3>hogehoge</h3>
+		<span>$50</span>
+		<div class="clear-right"></div>
+		<div class="main-photo"><div class="inner-ammount"></div></div>
+		<h4>recent works</h4>
+		<div class="clear-right"></div>
+		<ul class="recent-list">
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+		</ul>
+	</section>
+	<section class="left-section">
+		<h2>photograph</h2>
+		<h3>hogehoge</h3>
+		<span>$50</span>
+		<div class="clear-right"></div>
+		<div class="main-photo"><div class="inner-ammount"></div></div>
+		<h4>recent works</h4>
+		<div class="clear-right"></div>
+		<ul class="recent-list">
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+		</ul>
+	</section>
+	<section>
+		<h2>photograph</h2>
+		<h3>hogehoge</h3>
+		<span>$50</span>
+		<div class="clear-right"></div>
+		<div class="main-photo"><div class="inner-ammount"></div></div>
+		<h4>recent works</h4>
+		<div class="clear-right"></div>
+		<ul class="recent-list">
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+		</ul>
+	</section>
+	<section class="left-section">
+		<h2>photograph</h2>
+		<h3>hogehoge</h3>
+		<span>$50</span>
+		<div class="clear-right"></div>
+		<div class="main-photo"><div class="inner-ammount"></div></div>
+		<h4>recent works</h4>
+		<div class="clear-right"></div>
+		<ul class="recent-list">
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo"><div class="recent-inner-ammount"></div></li>
+			<li class="recent-photo down"><div class="recent-inner-ammount"></div></li>
+		</ul>
+	</section>
+	<footer>
+		<p>&copy;2018 Yutaro Yoshikawa</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>決済情報入力</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/template.css">
+	<link rel="stylesheet" type="text/css" href="./css/credit.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+                <a href="./index.html"><li id="head-title">Tipper</li></a>
+                <a href="./product_list.html"><li id="subscribe">商品一覧</li></a>
+            </ul>
+		</nav>
+	</header>
+	<div id="main-wrapper">
+		<h1>入力情報確認</h1>
+		<form>
+
+			<div class="input">
+				<label>氏名</label>
+				<input type="text" name="name" value="Masaru Tani" readonly>
+			</div>
+			
+			<div class="input">
+				<label>郵便番号</label>
+				<input type="text" name="name" value="160-0023" readonly>
+			</div>
+			
+			<div class="input">
+				<label>都道府県</label>
+				<select name="pref_id">
+					<option value="13" selected>東京都</option>
+				</select>
+			</div>
+
+			<div class="input">
+				<label>住所</label>
+				<input type="text" name="address" value="新宿区 西新宿１丁目７−３" readonly>
+			</div>
+			
+			<div class="input">
+				<label>建物名</label>
+				<input type="text" name="building" value="総合校舎コクーンタワー" readonly>
+			</div>
+
+			<div class="input">
+				<label>支払い方法選択</label>
+				<select>
+					<option selected>クレジットカード</option>
+				</select>
+			</div>
+
+			<div class="input">
+				<label>クレジットカード番号</label>
+				<input type="number" name="credit_num" value="012345678901" maxlength="12" readonly>
+			</div>
+
+			<div class="input">
+				<label>カード暗証番号</label>
+				<input type="number" name="passnum" value="012" maxlength="3" readonly>
+			</div>
+
+			<div class="input">
+				<label>カード有効期限</label>
+				<input type="month" name="passnum" value="2024-01" readonly>
+			</div>
+
+			<div class="input">
+				<label>カード名義人</label>
+				<input type="text" name="passnum" value="MASARU TANI" readonly>
+			</div>
+			
+			<a href="./thankyou.html"><img src="./img/next-page.png"></a>
+		</form>
+	</div>
+	<footer>
+		<p>&copy;2018 Yutaro Yoshikawa</p>
+	</footer>
+</body>
+</html>
